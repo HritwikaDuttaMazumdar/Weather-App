@@ -8,7 +8,7 @@ let wind = document.getElementById('wind');
 let weatherIcon = document.getElementById('weather-icon');
 let forecastContainer = document.getElementById('forecast');
 
-const API_KEY = 'cf2f3c21ddeac483982a833e84fb7fc9';
+const API_KEY = 'YOUR_API_KEY'';
 
 const apicall = async (cityName) => {
     let api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`;
