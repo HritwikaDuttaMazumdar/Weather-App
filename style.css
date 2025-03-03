@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+}
+
+.card {
+  background: url('BG.jpg') no-repeat center center/cover;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 1.5em;
+  width: 90%;
+  max-width: 400px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Cloud Image (Logo) */
+.cloud-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Search Box */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+button {
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+  width: 90px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+  transform: scale(1.1);
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.30);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  width: calc(100% - 100px);
+}
+
+/* Weather Result Alignment Fix */
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+/* Weather Icon Alignment */
+.icon {
+  display: none;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+/* Weather Description */
+.description {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+/* Forecast Section */
+.forecast {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.forecast .day {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  flex: 1;
+  font-size: 12px;
+}
+
+.forecast .day img {
+  width: 40px;
+  height: 40px;
+}
